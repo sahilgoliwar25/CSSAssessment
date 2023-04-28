@@ -1,0 +1,98 @@
+body {
+  background-color: darkslategray;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.bodyContainer {
+  display: flex;
+  gap: 20px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 50px 30px 50px 30px;
+}
+.box {
+  height: 250px;
+  width: 250px;
+  background-color: rgb(121, 234, 60);
+  color: white;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: ease-in-out 0.5s;
+}
+.box1:hover {
+  background-color: red;
+  transition: ease-in-out 0.5s;
+  transform: translateX(30px);
+}
+.box2:hover {
+  background-color: red;
+  transition: ease-in-out 0.5s;
+  transform: translateX(-30px);
+}
+.box3:hover {
+  background-color: red;
+  transition: ease-in-out 0.5s;
+  transform: translateY(-30px);
+}
+.box4:hover {
+  background-color: red;
+  transition: ease-in-out 0.5s;
+  transform: translateY(30px);
+}
+.box5:hover {
+  background-color: red;
+  transition: ease-in-out 0.5s;
+  transform: scale(1.3, 1.3);
+}
+.box6:hover {
+  background-color: red;
+  transition: ease-in-out 0.5s;
+  transform: scale(0.6, 0.6);
+}
+.box7:hover {
+  background-color: red;
+  transition: ease-in-out 0.5s;
+  border-radius: 50%;
+}
+.box8:hover {
+  background-color: red;
+  transition: ease-in-out 0.5s;
+  transform: scale(1.3, 1);
+}
+.box9:hover {
+  background-color: red;
+  transition: ease-in-out 0.5s;
+  transform: scale(1, 1.3);
+}
+.box10:hover {
+  background-color: red;
+  transition: ease-in-out 0.5s;
+  transform: rotate(30deg);
+}
+@media only screen and (min-width: 400px) and (max-width: 950px) {
+  .bodyContainer {
+    gap: 18px;
+    padding: 50px 15px 50px 15px;
+  }
+  .box {
+    height: 150px;
+    width: 150px;
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .bodyContainer {
+    gap: 15px;
+    padding: 50px 10px 50px 10px;
+  }
+  .box {
+    height: 60px;
+    width: 60px;
+    font-size: 14px;
+  }
+}
